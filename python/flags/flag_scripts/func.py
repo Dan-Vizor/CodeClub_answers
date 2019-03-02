@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 from turtle import *
 
-def rect(width, hight):
+def rect(width, hight, color):
 	pendown()
-	begin_fill()
+	if color:
+		begin_fill()
 
 	forward(width)
 	right(90)
@@ -14,5 +15,6 @@ def rect(width, hight):
 	forward(hight)
 	right(90)
 	
-	end_fill()
+	if color:
+		end_fill()
 	penup()
