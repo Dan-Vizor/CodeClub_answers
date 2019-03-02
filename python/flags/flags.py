@@ -23,6 +23,8 @@ while True:
 		os.system("./" + inp + ".py")
 		
 	else:
-		print("Error: file not found\n")
+		print("Error: file not found")
+		print("currently available files are:")
+		for x in range(1, len(flag_list)): print(flag_list[x])
 
 pass
