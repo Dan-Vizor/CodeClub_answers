@@ -7,9 +7,8 @@ def sha256(inp):
 doc = open("pass.txt", "r")
 hashes = doc.read().split("\n")
 del hashes[-1]
-print(hashes)
 
-for x in range(1,3):
+for x in range(0,3):
 	inp = input("enter password: ")
 
 	if inp == "new password":
@@ -22,5 +21,5 @@ for x in range(1,3):
 		exit()
 
 	else:
-		print("incorrect password\nattempt {} of 3\n".format(x))
+		print("incorrect password\nattempt {} of 3\n".format(x +1))
 print("out of attempts")
