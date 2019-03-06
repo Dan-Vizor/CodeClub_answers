@@ -3,7 +3,6 @@ from turtle import *
 from func import *
 import time
 
-
 penup()
 left(90)
 forward(50)

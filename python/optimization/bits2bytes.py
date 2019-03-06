@@ -18,11 +18,9 @@ while True:
     else:
         remainder = amount % 1000
         carryForward = (amount-remainder)/1000
-    
     if loop > 8:
         print("error: input is to high\n")
         exit()
-    
     if remainder != 0.0: print(names[loop] + ": " + str(round(remainder)))
     loop += 1
     if carryForward > 0: amount = carryForward

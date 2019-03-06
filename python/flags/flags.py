@@ -20,8 +20,7 @@ while True:
 
 	elif inp + ".py" in flag_list:
 		print("found file " + inp + "\n")
-		os.system("./" + inp + ".py")
-		
+		os.system("./" + inp + ".py")		
 	else:
 		print("Error: file not found")
 		print("currently available files are:")
